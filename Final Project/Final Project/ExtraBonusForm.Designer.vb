@@ -84,7 +84,7 @@ Partial Class ExtraBonusForm
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnChoose)
         Me.Name = "ExtraBonusForm"
-        Me.Text = "ExtraBonusForm"
+        Me.Text = "Extra Bonus"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 

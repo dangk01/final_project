@@ -342,7 +342,7 @@ Partial Class SearchForm
         Me.Controls.Add(Me.btnAll)
         Me.Controls.Add(Me.lstBook)
         Me.Name = "SearchForm"
-        Me.Text = "Form2"
+        Me.Text = "Search & Add"
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
