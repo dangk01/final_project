@@ -90,12 +90,6 @@
     <Compile Include="MainForm.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="OrderHistoryForm.Designer.vb">
-      <DependentUpon>OrderHistoryForm.vb</DependentUpon>
-    </Compile>
-    <Compile Include="OrderHistoryForm.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="WelcomeForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -140,9 +134,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="MainForm.resx">
       <DependentUpon>MainForm.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="OrderHistoryForm.resx">
-      <DependentUpon>OrderHistoryForm.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WelcomeForm.resx">
       <DependentUpon>WelcomeForm.vb</DependentUpon>

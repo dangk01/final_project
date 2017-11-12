@@ -86,7 +86,7 @@ Partial Class ReviewOrderForm
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.DataGridView1)
         Me.Name = "ReviewOrderForm"
-        Me.Text = "Review Order"
+        Me.Text = "ReviewOrderForm"
         CType(Me.DataGridView1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()

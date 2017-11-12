@@ -39,10 +39,10 @@ Partial Class CartForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
-        Me.radSaving = New System.Windows.Forms.RadioButton()
-        Me.radNormal = New System.Windows.Forms.RadioButton()
         Me.radExpress = New System.Windows.Forms.RadioButton()
+        Me.radNormal = New System.Windows.Forms.RadioButton()
+        Me.radSaving = New System.Windows.Forms.RadioButton()
+        Me.Label3 = New System.Windows.Forms.Label()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.lblSubtotal = New System.Windows.Forms.Label()
         Me.btnPromotion = New System.Windows.Forms.Label()
@@ -209,25 +209,16 @@ Partial Class CartForm
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "GroupBox1"
         '
-        'Label3
+        'radExpress
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(10, 18)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(167, 17)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Please the shipping type:"
-        '
-        'radSaving
-        '
-        Me.radSaving.AutoSize = True
-        Me.radSaving.Location = New System.Drawing.Point(6, 84)
-        Me.radSaving.Name = "radSaving"
-        Me.radSaving.Size = New System.Drawing.Size(208, 21)
-        Me.radSaving.TabIndex = 2
-        Me.radSaving.TabStop = True
-        Me.radSaving.Text = "Saving Shipping (7-14 days)"
-        Me.radSaving.UseVisualStyleBackColor = True
+        Me.radExpress.AutoSize = True
+        Me.radExpress.Location = New System.Drawing.Point(6, 36)
+        Me.radExpress.Name = "radExpress"
+        Me.radExpress.Size = New System.Drawing.Size(207, 21)
+        Me.radExpress.TabIndex = 0
+        Me.radExpress.TabStop = True
+        Me.radExpress.Text = "Express Shipping (2-3 days)"
+        Me.radExpress.UseVisualStyleBackColor = True
         '
         'radNormal
         '
@@ -240,16 +231,25 @@ Partial Class CartForm
         Me.radNormal.Text = "Normal Shipping (5-7 days)"
         Me.radNormal.UseVisualStyleBackColor = True
         '
-        'radExpress
+        'radSaving
         '
-        Me.radExpress.AutoSize = True
-        Me.radExpress.Location = New System.Drawing.Point(6, 36)
-        Me.radExpress.Name = "radExpress"
-        Me.radExpress.Size = New System.Drawing.Size(207, 21)
-        Me.radExpress.TabIndex = 0
-        Me.radExpress.TabStop = True
-        Me.radExpress.Text = "Express Shipping (2-3 days)"
-        Me.radExpress.UseVisualStyleBackColor = True
+        Me.radSaving.AutoSize = True
+        Me.radSaving.Location = New System.Drawing.Point(6, 84)
+        Me.radSaving.Name = "radSaving"
+        Me.radSaving.Size = New System.Drawing.Size(208, 21)
+        Me.radSaving.TabIndex = 2
+        Me.radSaving.TabStop = True
+        Me.radSaving.Text = "Saving Shipping (7-14 days)"
+        Me.radSaving.UseVisualStyleBackColor = True
+        '
+        'Label3
+        '
+        Me.Label3.AutoSize = True
+        Me.Label3.Location = New System.Drawing.Point(10, 18)
+        Me.Label3.Name = "Label3"
+        Me.Label3.Size = New System.Drawing.Size(167, 17)
+        Me.Label3.TabIndex = 3
+        Me.Label3.Text = "Please the shipping type:"
         '
         'btnDelete
         '
@@ -334,7 +334,7 @@ Partial Class CartForm
         Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.ListBox1)
         Me.Name = "CartForm"
-        Me.Text = "Your cart"
+        Me.Text = "CartForm"
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         Me.ResumeLayout(False)
