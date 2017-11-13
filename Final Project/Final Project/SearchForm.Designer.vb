@@ -47,7 +47,7 @@ Partial Class SearchForm
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label6 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.btnExit = New System.Windows.Forms.Button()
         Me.cboQuantity = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnCart = New System.Windows.Forms.Button()
@@ -272,14 +272,14 @@ Partial Class SearchForm
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
         '
-        'Button1
+        'btnExit
         '
-        Me.Button1.Location = New System.Drawing.Point(359, 413)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 30
-        Me.Button1.Text = "Exit"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.btnExit.Location = New System.Drawing.Point(359, 413)
+        Me.btnExit.Name = "btnExit"
+        Me.btnExit.Size = New System.Drawing.Size(75, 23)
+        Me.btnExit.TabIndex = 30
+        Me.btnExit.Text = "Exit"
+        Me.btnExit.UseVisualStyleBackColor = True
         '
         'cboQuantity
         '
@@ -315,7 +315,7 @@ Partial Class SearchForm
         Me.Controls.Add(Me.btnCart)
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.cboQuantity)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnAdd)
         Me.Controls.Add(Me.lblDescriptionB)
         Me.Controls.Add(Me.lblPrice)
@@ -373,7 +373,7 @@ Partial Class SearchForm
     Friend WithEvents Label7 As Label
     Friend WithEvents Label6 As Label
     Friend WithEvents btnAdd As Button
-    Friend WithEvents Button1 As Button
+    Friend WithEvents btnExit As Button
     Friend WithEvents cboQuantity As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnCart As Button

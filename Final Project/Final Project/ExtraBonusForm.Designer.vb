@@ -23,7 +23,6 @@ Partial Class ExtraBonusForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.btnChoose = New System.Windows.Forms.Button()
-        Me.btnClose = New System.Windows.Forms.Button()
         Me.cboExtraBonus = New System.Windows.Forms.ComboBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
@@ -37,15 +36,6 @@ Partial Class ExtraBonusForm
         Me.btnChoose.TabIndex = 0
         Me.btnChoose.Text = "Choose"
         Me.btnChoose.UseVisualStyleBackColor = True
-        '
-        'btnClose
-        '
-        Me.btnClose.Location = New System.Drawing.Point(132, 140)
-        Me.btnClose.Name = "btnClose"
-        Me.btnClose.Size = New System.Drawing.Size(75, 23)
-        Me.btnClose.TabIndex = 1
-        Me.btnClose.Text = "Close"
-        Me.btnClose.UseVisualStyleBackColor = True
         '
         'cboExtraBonus
         '
@@ -81,7 +71,6 @@ Partial Class ExtraBonusForm
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.cboExtraBonus)
-        Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnChoose)
         Me.Name = "ExtraBonusForm"
         Me.Text = "Extra Bonus"
@@ -91,7 +80,6 @@ Partial Class ExtraBonusForm
     End Sub
 
     Friend WithEvents btnChoose As Button
-    Friend WithEvents btnClose As Button
     Friend WithEvents cboExtraBonus As ComboBox
     Friend WithEvents Label1 As Label
     Friend WithEvents Label2 As Label

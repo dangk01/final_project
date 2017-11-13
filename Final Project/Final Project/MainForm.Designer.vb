@@ -27,7 +27,7 @@ Partial Class MainForm
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnSearch = New System.Windows.Forms.Button()
         Me.btnView = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.btnLogOut = New System.Windows.Forms.Button()
         Me.btnCustName = New System.Windows.Forms.Label()
         Me.SuspendLayout()
         '
@@ -76,14 +76,14 @@ Partial Class MainForm
         Me.btnView.Text = "View Order History"
         Me.btnView.UseVisualStyleBackColor = True
         '
-        'Button3
+        'btnLogOut
         '
-        Me.Button3.Location = New System.Drawing.Point(308, 148)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(75, 29)
-        Me.Button3.TabIndex = 5
-        Me.Button3.Text = "Log Out"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.btnLogOut.Location = New System.Drawing.Point(308, 148)
+        Me.btnLogOut.Name = "btnLogOut"
+        Me.btnLogOut.Size = New System.Drawing.Size(75, 29)
+        Me.btnLogOut.TabIndex = 5
+        Me.btnLogOut.Text = "Log Out"
+        Me.btnLogOut.UseVisualStyleBackColor = True
         '
         'btnCustName
         '
@@ -100,7 +100,7 @@ Partial Class MainForm
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(395, 215)
         Me.Controls.Add(Me.btnCustName)
-        Me.Controls.Add(Me.Button3)
+        Me.Controls.Add(Me.btnLogOut)
         Me.Controls.Add(Me.btnView)
         Me.Controls.Add(Me.btnSearch)
         Me.Controls.Add(Me.Label3)
@@ -118,6 +118,6 @@ Partial Class MainForm
     Friend WithEvents Label3 As Label
     Friend WithEvents btnSearch As Button
     Friend WithEvents btnView As Button
-    Friend WithEvents Button3 As Button
+    Friend WithEvents btnLogOut As Button
     Friend WithEvents btnCustName As Label
 End Class

@@ -22,7 +22,7 @@ Partial Class CartForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstCart = New System.Windows.Forms.ListBox()
         Me.lblPrice = New System.Windows.Forms.Label()
         Me.lblAuthor = New System.Windows.Forms.Label()
         Me.lblISBN = New System.Windows.Forms.Label()
@@ -52,14 +52,14 @@ Partial Class CartForm
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
-        'ListBox1
+        'lstCart
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(26, 63)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(208, 116)
-        Me.ListBox1.TabIndex = 0
+        Me.lstCart.FormattingEnabled = True
+        Me.lstCart.ItemHeight = 16
+        Me.lstCart.Location = New System.Drawing.Point(26, 63)
+        Me.lstCart.Name = "lstCart"
+        Me.lstCart.Size = New System.Drawing.Size(208, 116)
+        Me.lstCart.TabIndex = 0
         '
         'lblPrice
         '
@@ -93,9 +93,9 @@ Partial Class CartForm
         Me.lblBonus.AutoSize = True
         Me.lblBonus.Location = New System.Drawing.Point(110, 296)
         Me.lblBonus.Name = "lblBonus"
-        Me.lblBonus.Size = New System.Drawing.Size(59, 17)
+        Me.lblBonus.Size = New System.Drawing.Size(42, 17)
         Me.lblBonus.TabIndex = 22
-        Me.lblBonus.Text = "Label13"
+        Me.lblBonus.Text = "None"
         '
         'lblTitle
         '
@@ -332,7 +332,7 @@ Partial Class CartForm
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.Label7)
         Me.Controls.Add(Me.Label6)
-        Me.Controls.Add(Me.ListBox1)
+        Me.Controls.Add(Me.lstCart)
         Me.Name = "CartForm"
         Me.Text = "Your cart"
         Me.GroupBox1.ResumeLayout(False)
@@ -342,7 +342,7 @@ Partial Class CartForm
 
     End Sub
 
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstCart As ListBox
     Friend WithEvents lblPrice As Label
     Friend WithEvents lblAuthor As Label
     Friend WithEvents lblISBN As Label
