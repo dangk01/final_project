@@ -25,20 +25,18 @@ Partial Class WelcomeForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.lstPromotion = New System.Windows.Forms.ListBox()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.ListBox1 = New System.Windows.Forms.ListBox()
+        Me.lstNewArrivals = New System.Windows.Forms.ListBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.lblDescriptionP = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.lblActivePeriod = New System.Windows.Forms.Label()
         Me.GroupBox2 = New System.Windows.Forms.GroupBox()
-        Me.lblDescriptionB = New System.Windows.Forms.Label()
         Me.lblPrice = New System.Windows.Forms.Label()
         Me.lblAuthor = New System.Windows.Forms.Label()
         Me.lblISBN = New System.Windows.Forms.Label()
         Me.lblBonus = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -83,14 +81,14 @@ Partial Class WelcomeForm
         Me.Label2.TabIndex = 2
         Me.Label2.Text = "Active Promotions/Offers: "
         '
-        'ListBox1
+        'lstNewArrivals
         '
-        Me.ListBox1.FormattingEnabled = True
-        Me.ListBox1.ItemHeight = 16
-        Me.ListBox1.Location = New System.Drawing.Point(6, 50)
-        Me.ListBox1.Name = "ListBox1"
-        Me.ListBox1.Size = New System.Drawing.Size(311, 132)
-        Me.ListBox1.TabIndex = 3
+        Me.lstNewArrivals.FormattingEnabled = True
+        Me.lstNewArrivals.ItemHeight = 16
+        Me.lstNewArrivals.Location = New System.Drawing.Point(6, 50)
+        Me.lstNewArrivals.Name = "lstNewArrivals"
+        Me.lstNewArrivals.Size = New System.Drawing.Size(311, 132)
+        Me.lstNewArrivals.TabIndex = 3
         '
         'GroupBox1
         '
@@ -110,7 +108,7 @@ Partial Class WelcomeForm
         'lblDescriptionP
         '
         Me.lblDescriptionP.AutoSize = True
-        Me.lblDescriptionP.Location = New System.Drawing.Point(9, 232)
+        Me.lblDescriptionP.Location = New System.Drawing.Point(9, 250)
         Me.lblDescriptionP.Name = "lblDescriptionP"
         Me.lblDescriptionP.Size = New System.Drawing.Size(51, 17)
         Me.lblDescriptionP.TabIndex = 8
@@ -119,7 +117,7 @@ Partial Class WelcomeForm
         'Label4
         '
         Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(6, 210)
+        Me.Label4.Location = New System.Drawing.Point(6, 232)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(87, 17)
         Me.Label4.TabIndex = 7
@@ -137,7 +135,7 @@ Partial Class WelcomeForm
         'lblActivePeriod
         '
         Me.lblActivePeriod.AutoSize = True
-        Me.lblActivePeriod.Location = New System.Drawing.Point(123, 184)
+        Me.lblActivePeriod.Location = New System.Drawing.Point(9, 201)
         Me.lblActivePeriod.Name = "lblActivePeriod"
         Me.lblActivePeriod.Size = New System.Drawing.Size(51, 17)
         Me.lblActivePeriod.TabIndex = 6
@@ -145,35 +143,24 @@ Partial Class WelcomeForm
         '
         'GroupBox2
         '
-        Me.GroupBox2.Controls.Add(Me.lblDescriptionB)
         Me.GroupBox2.Controls.Add(Me.lblPrice)
         Me.GroupBox2.Controls.Add(Me.lblAuthor)
         Me.GroupBox2.Controls.Add(Me.lblISBN)
         Me.GroupBox2.Controls.Add(Me.lblBonus)
         Me.GroupBox2.Controls.Add(Me.lblTitle)
-        Me.GroupBox2.Controls.Add(Me.Label11)
         Me.GroupBox2.Controls.Add(Me.Label10)
         Me.GroupBox2.Controls.Add(Me.Label9)
         Me.GroupBox2.Controls.Add(Me.Label8)
         Me.GroupBox2.Controls.Add(Me.Label7)
         Me.GroupBox2.Controls.Add(Me.Label6)
         Me.GroupBox2.Controls.Add(Me.Label5)
-        Me.GroupBox2.Controls.Add(Me.ListBox1)
+        Me.GroupBox2.Controls.Add(Me.lstNewArrivals)
         Me.GroupBox2.Location = New System.Drawing.Point(246, 72)
         Me.GroupBox2.Name = "GroupBox2"
         Me.GroupBox2.Size = New System.Drawing.Size(346, 402)
         Me.GroupBox2.TabIndex = 5
         Me.GroupBox2.TabStop = False
         Me.GroupBox2.Text = "GroupBox2"
-        '
-        'lblDescriptionB
-        '
-        Me.lblDescriptionB.AutoSize = True
-        Me.lblDescriptionB.Location = New System.Drawing.Point(6, 378)
-        Me.lblDescriptionB.Name = "lblDescriptionB"
-        Me.lblDescriptionB.Size = New System.Drawing.Size(59, 17)
-        Me.lblDescriptionB.TabIndex = 16
-        Me.lblDescriptionB.Text = "Label17"
         '
         'lblPrice
         '
@@ -219,15 +206,6 @@ Partial Class WelcomeForm
         Me.lblTitle.Size = New System.Drawing.Size(59, 17)
         Me.lblTitle.TabIndex = 11
         Me.lblTitle.Text = "Label12"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(6, 349)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(83, 17)
-        Me.Label11.TabIndex = 10
-        Me.Label11.Text = "Description:"
         '
         'Label10
         '
@@ -353,20 +331,18 @@ Partial Class WelcomeForm
     Friend WithEvents Label1 As Label
     Friend WithEvents lstPromotion As ListBox
     Friend WithEvents Label2 As Label
-    Friend WithEvents ListBox1 As ListBox
+    Friend WithEvents lstNewArrivals As ListBox
     Friend WithEvents GroupBox1 As GroupBox
     Friend WithEvents lblDescriptionP As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
     Friend WithEvents lblActivePeriod As Label
     Friend WithEvents GroupBox2 As GroupBox
-    Friend WithEvents lblDescriptionB As Label
     Friend WithEvents lblPrice As Label
     Friend WithEvents lblAuthor As Label
     Friend WithEvents lblISBN As Label
     Friend WithEvents lblBonus As Label
     Friend WithEvents lblTitle As Label
-    Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label

@@ -34,13 +34,11 @@ Partial Class SearchForm
         Me.txtSearchTitle = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblCustName = New System.Windows.Forms.Label()
-        Me.lblDescriptionB = New System.Windows.Forms.Label()
         Me.lblPrice = New System.Windows.Forms.Label()
         Me.lblAuthor = New System.Windows.Forms.Label()
         Me.lblISBN = New System.Windows.Forms.Label()
         Me.lblBonus = New System.Windows.Forms.Label()
         Me.lblTitle = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -155,15 +153,6 @@ Partial Class SearchForm
         Me.lblCustName.TabIndex = 11
         Me.lblCustName.Text = "Label3"
         '
-        'lblDescriptionB
-        '
-        Me.lblDescriptionB.AutoSize = True
-        Me.lblDescriptionB.Location = New System.Drawing.Point(380, 252)
-        Me.lblDescriptionB.Name = "lblDescriptionB"
-        Me.lblDescriptionB.Size = New System.Drawing.Size(59, 17)
-        Me.lblDescriptionB.TabIndex = 28
-        Me.lblDescriptionB.Text = "Label17"
-        '
         'lblPrice
         '
         Me.lblPrice.AutoSize = True
@@ -208,15 +197,6 @@ Partial Class SearchForm
         Me.lblTitle.Size = New System.Drawing.Size(59, 17)
         Me.lblTitle.TabIndex = 23
         Me.lblTitle.Text = "Label12"
-        '
-        'Label11
-        '
-        Me.Label11.AutoSize = True
-        Me.Label11.Location = New System.Drawing.Point(380, 223)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(83, 17)
-        Me.Label11.TabIndex = 22
-        Me.Label11.Text = "Description:"
         '
         'Label10
         '
@@ -317,13 +297,11 @@ Partial Class SearchForm
         Me.Controls.Add(Me.cboQuantity)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.lblDescriptionB)
         Me.Controls.Add(Me.lblPrice)
         Me.Controls.Add(Me.lblAuthor)
         Me.Controls.Add(Me.lblISBN)
         Me.Controls.Add(Me.lblBonus)
         Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
@@ -360,13 +338,11 @@ Partial Class SearchForm
     Friend WithEvents txtSearchTitle As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents lblCustName As Label
-    Friend WithEvents lblDescriptionB As Label
     Friend WithEvents lblPrice As Label
     Friend WithEvents lblAuthor As Label
     Friend WithEvents lblISBN As Label
     Friend WithEvents lblBonus As Label
     Friend WithEvents lblTitle As Label
-    Friend WithEvents Label11 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
