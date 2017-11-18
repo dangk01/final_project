@@ -93,6 +93,9 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>BookstoreDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="BookstoreDataSet.vb">
+      <DependentUpon>BookstoreDataSet.xsd</DependentUpon>
+    </Compile>
     <Compile Include="CartForm.Designer.vb">
       <DependentUpon>CartForm.vb</DependentUpon>
     </Compile>
