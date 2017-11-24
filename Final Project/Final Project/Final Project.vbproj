@@ -103,6 +103,7 @@
     <Compile Include="CartForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Customers.vb" />
     <Compile Include="ExtraBonusForm.Designer.vb">
       <DependentUpon>ExtraBonusForm.vb</DependentUpon>
     </Compile>

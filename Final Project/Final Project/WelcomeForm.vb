@@ -1,9 +1,11 @@
 ﻿Public Class WelcomeForm
-    Private Sub btnClose_Click(sender As Object, e As EventArgs) 
+    Dim mCustomers As New Customers
+
+    Private Sub btnClose_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub btnLog_Click(sender As Object, e As EventArgs) 
+    Private Sub btnLog_Click(sender As Object, e As EventArgs)
         txtID.Text = ""
         MainForm.ShowDialog()
 
@@ -20,6 +22,10 @@
 
     Private Sub btnClose_Click_1(sender As Object, e As EventArgs) Handles btnClose.Click
         Me.Close()
+
+    End Sub
+
+    Private Sub btnLog_Click_1(sender As Object, e As EventArgs) Handles btnLog.Click
 
     End Sub
 End Class

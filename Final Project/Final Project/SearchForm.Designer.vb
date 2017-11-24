@@ -22,9 +22,7 @@ Partial Class SearchForm
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Me.lstBook = New System.Windows.Forms.ListBox()
-        Me.btnAll = New System.Windows.Forms.Button()
-        Me.btnNew = New System.Windows.Forms.Button()
+        Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.btnSearchAuthor = New System.Windows.Forms.Button()
         Me.btnSearchTitle = New System.Windows.Forms.Button()
@@ -34,49 +32,25 @@ Partial Class SearchForm
         Me.txtSearchTitle = New System.Windows.Forms.TextBox()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblCustName = New System.Windows.Forms.Label()
-        Me.lblPrice = New System.Windows.Forms.Label()
-        Me.lblAuthor = New System.Windows.Forms.Label()
-        Me.lblISBN = New System.Windows.Forms.Label()
-        Me.lblBonus = New System.Windows.Forms.Label()
-        Me.lblTitle = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
         Me.btnAdd = New System.Windows.Forms.Button()
         Me.btnExit = New System.Windows.Forms.Button()
-        Me.cboQuantity = New System.Windows.Forms.ComboBox()
         Me.Label3 = New System.Windows.Forms.Label()
         Me.btnCart = New System.Windows.Forms.Button()
+        Me.BookstoreDataSet = New Final_Project.BookstoreDataSet()
+        Me.BooksBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.BooksTableAdapter = New Final_Project.BookstoreDataSetTableAdapters.BooksTableAdapter()
+        Me.dgvBook = New System.Windows.Forms.DataGridView()
+        Me.BooksOrderLineBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.OrderLineTableAdapter = New Final_Project.BookstoreDataSetTableAdapters.OrderLineTableAdapter()
+        Me.BookstoreDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.txtQuantity = New System.Windows.Forms.TextBox()
+        Me.txtStatus = New System.Windows.Forms.Label()
+        CType(Me.BookstoreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BooksBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.dgvBook, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BooksOrderLineBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.BookstoreDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
-        '
-        'lstBook
-        '
-        Me.lstBook.FormattingEnabled = True
-        Me.lstBook.ItemHeight = 16
-        Me.lstBook.Location = New System.Drawing.Point(12, 72)
-        Me.lstBook.Name = "lstBook"
-        Me.lstBook.Size = New System.Drawing.Size(232, 244)
-        Me.lstBook.TabIndex = 0
-        '
-        'btnAll
-        '
-        Me.btnAll.Location = New System.Drawing.Point(250, 101)
-        Me.btnAll.Name = "btnAll"
-        Me.btnAll.Size = New System.Drawing.Size(75, 23)
-        Me.btnAll.TabIndex = 1
-        Me.btnAll.Text = "All Books"
-        Me.btnAll.UseVisualStyleBackColor = True
-        '
-        'btnNew
-        '
-        Me.btnNew.Location = New System.Drawing.Point(250, 72)
-        Me.btnNew.Name = "btnNew"
-        Me.btnNew.Size = New System.Drawing.Size(75, 23)
-        Me.btnNew.TabIndex = 2
-        Me.btnNew.Text = "New Books"
-        Me.btnNew.UseVisualStyleBackColor = True
         '
         'Label1
         '
@@ -89,50 +63,50 @@ Partial Class SearchForm
         '
         'btnSearchAuthor
         '
-        Me.btnSearchAuthor.Location = New System.Drawing.Point(169, 363)
+        Me.btnSearchAuthor.Location = New System.Drawing.Point(185, 363)
         Me.btnSearchAuthor.Name = "btnSearchAuthor"
-        Me.btnSearchAuthor.Size = New System.Drawing.Size(126, 34)
+        Me.btnSearchAuthor.Size = New System.Drawing.Size(147, 34)
         Me.btnSearchAuthor.TabIndex = 4
         Me.btnSearchAuthor.Text = "Search by Author"
         Me.btnSearchAuthor.UseVisualStyleBackColor = True
         '
         'btnSearchTitle
         '
-        Me.btnSearchTitle.Location = New System.Drawing.Point(169, 322)
+        Me.btnSearchTitle.Location = New System.Drawing.Point(185, 322)
         Me.btnSearchTitle.Name = "btnSearchTitle"
-        Me.btnSearchTitle.Size = New System.Drawing.Size(126, 35)
+        Me.btnSearchTitle.Size = New System.Drawing.Size(147, 35)
         Me.btnSearchTitle.TabIndex = 5
         Me.btnSearchTitle.Text = "Search by Title"
         Me.btnSearchTitle.UseVisualStyleBackColor = True
         '
         'btnSearchISBN
         '
-        Me.btnSearchISBN.Location = New System.Drawing.Point(169, 403)
+        Me.btnSearchISBN.Location = New System.Drawing.Point(185, 403)
         Me.btnSearchISBN.Name = "btnSearchISBN"
-        Me.btnSearchISBN.Size = New System.Drawing.Size(126, 32)
+        Me.btnSearchISBN.Size = New System.Drawing.Size(147, 32)
         Me.btnSearchISBN.TabIndex = 6
         Me.btnSearchISBN.Text = "Search by ISBN"
         Me.btnSearchISBN.UseVisualStyleBackColor = True
         '
         'txtSearchAuthor
         '
-        Me.txtSearchAuthor.Location = New System.Drawing.Point(15, 375)
+        Me.txtSearchAuthor.Location = New System.Drawing.Point(15, 369)
         Me.txtSearchAuthor.Name = "txtSearchAuthor"
-        Me.txtSearchAuthor.Size = New System.Drawing.Size(100, 22)
+        Me.txtSearchAuthor.Size = New System.Drawing.Size(172, 22)
         Me.txtSearchAuthor.TabIndex = 7
         '
         'txtSearchISBN
         '
-        Me.txtSearchISBN.Location = New System.Drawing.Point(15, 413)
+        Me.txtSearchISBN.Location = New System.Drawing.Point(15, 408)
         Me.txtSearchISBN.Name = "txtSearchISBN"
-        Me.txtSearchISBN.Size = New System.Drawing.Size(100, 22)
+        Me.txtSearchISBN.Size = New System.Drawing.Size(172, 22)
         Me.txtSearchISBN.TabIndex = 8
         '
         'txtSearchTitle
         '
-        Me.txtSearchTitle.Location = New System.Drawing.Point(15, 335)
+        Me.txtSearchTitle.Location = New System.Drawing.Point(15, 328)
         Me.txtSearchTitle.Name = "txtSearchTitle"
-        Me.txtSearchTitle.Size = New System.Drawing.Size(100, 22)
+        Me.txtSearchTitle.Size = New System.Drawing.Size(172, 22)
         Me.txtSearchTitle.TabIndex = 9
         '
         'Label2
@@ -153,101 +127,11 @@ Partial Class SearchForm
         Me.lblCustName.TabIndex = 11
         Me.lblCustName.Text = "Label3"
         '
-        'lblPrice
-        '
-        Me.lblPrice.AutoSize = True
-        Me.lblPrice.Location = New System.Drawing.Point(457, 192)
-        Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(59, 17)
-        Me.lblPrice.TabIndex = 27
-        Me.lblPrice.Text = "Label16"
-        '
-        'lblAuthor
-        '
-        Me.lblAuthor.AutoSize = True
-        Me.lblAuthor.Location = New System.Drawing.Point(457, 106)
-        Me.lblAuthor.Name = "lblAuthor"
-        Me.lblAuthor.Size = New System.Drawing.Size(59, 17)
-        Me.lblAuthor.TabIndex = 26
-        Me.lblAuthor.Text = "Label15"
-        '
-        'lblISBN
-        '
-        Me.lblISBN.AutoSize = True
-        Me.lblISBN.Location = New System.Drawing.Point(457, 136)
-        Me.lblISBN.Name = "lblISBN"
-        Me.lblISBN.Size = New System.Drawing.Size(59, 17)
-        Me.lblISBN.TabIndex = 25
-        Me.lblISBN.Text = "Label14"
-        '
-        'lblBonus
-        '
-        Me.lblBonus.AutoSize = True
-        Me.lblBonus.Location = New System.Drawing.Point(457, 165)
-        Me.lblBonus.Name = "lblBonus"
-        Me.lblBonus.Size = New System.Drawing.Size(59, 17)
-        Me.lblBonus.TabIndex = 24
-        Me.lblBonus.Text = "Label13"
-        '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(457, 75)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(59, 17)
-        Me.lblTitle.TabIndex = 23
-        Me.lblTitle.Text = "Label12"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(380, 192)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(44, 17)
-        Me.Label10.TabIndex = 21
-        Me.Label10.Text = "Price:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(380, 165)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(56, 17)
-        Me.Label9.TabIndex = 20
-        Me.Label9.Text = "Bonus: "
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(380, 75)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 17)
-        Me.Label8.TabIndex = 19
-        Me.Label8.Text = "Title:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(380, 106)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 17)
-        Me.Label7.TabIndex = 18
-        Me.Label7.Text = "Author:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(380, 136)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(43, 17)
-        Me.Label6.TabIndex = 17
-        Me.Label6.Text = "ISBN:"
-        '
         'btnAdd
         '
-        Me.btnAdd.Location = New System.Drawing.Point(361, 363)
+        Me.btnAdd.Location = New System.Drawing.Point(359, 363)
         Me.btnAdd.Name = "btnAdd"
-        Me.btnAdd.Size = New System.Drawing.Size(75, 23)
+        Me.btnAdd.Size = New System.Drawing.Size(75, 44)
         Me.btnAdd.TabIndex = 29
         Me.btnAdd.Text = "Add"
         Me.btnAdd.UseVisualStyleBackColor = True
@@ -260,14 +144,6 @@ Partial Class SearchForm
         Me.btnExit.TabIndex = 30
         Me.btnExit.Text = "Exit"
         Me.btnExit.UseVisualStyleBackColor = True
-        '
-        'cboQuantity
-        '
-        Me.cboQuantity.FormattingEnabled = True
-        Me.cboQuantity.Location = New System.Drawing.Point(442, 322)
-        Me.cboQuantity.Name = "cboQuantity"
-        Me.cboQuantity.Size = New System.Drawing.Size(74, 24)
-        Me.cboQuantity.TabIndex = 31
         '
         'Label3
         '
@@ -287,26 +163,75 @@ Partial Class SearchForm
         Me.btnCart.Text = "Go to your cart"
         Me.btnCart.UseVisualStyleBackColor = True
         '
+        'BookstoreDataSet
+        '
+        Me.BookstoreDataSet.DataSetName = "BookstoreDataSet"
+        Me.BookstoreDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'BooksBindingSource
+        '
+        Me.BooksBindingSource.DataMember = "Books"
+        Me.BooksBindingSource.DataSource = Me.BookstoreDataSet
+        '
+        'BooksTableAdapter
+        '
+        Me.BooksTableAdapter.ClearBeforeFill = True
+        '
+        'dgvBook
+        '
+        Me.dgvBook.AllowUserToAddRows = False
+        Me.dgvBook.AllowUserToDeleteRows = False
+        Me.dgvBook.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
+        Me.dgvBook.Location = New System.Drawing.Point(-1, 83)
+        Me.dgvBook.Name = "dgvBook"
+        Me.dgvBook.ReadOnly = True
+        Me.dgvBook.RowTemplate.Height = 24
+        Me.dgvBook.Size = New System.Drawing.Size(691, 177)
+        Me.dgvBook.TabIndex = 34
+        '
+        'BooksOrderLineBindingSource
+        '
+        Me.BooksOrderLineBindingSource.DataMember = "Books_OrderLine"
+        Me.BooksOrderLineBindingSource.DataSource = Me.BooksBindingSource
+        '
+        'OrderLineTableAdapter
+        '
+        Me.OrderLineTableAdapter.ClearBeforeFill = True
+        '
+        'BookstoreDataSetBindingSource
+        '
+        Me.BookstoreDataSetBindingSource.DataSource = Me.BookstoreDataSet
+        Me.BookstoreDataSetBindingSource.Position = 0
+        '
+        'txtQuantity
+        '
+        Me.txtQuantity.Location = New System.Drawing.Point(460, 316)
+        Me.txtQuantity.Name = "txtQuantity"
+        Me.txtQuantity.Size = New System.Drawing.Size(100, 22)
+        Me.txtQuantity.TabIndex = 35
+        '
+        'txtStatus
+        '
+        Me.txtStatus.AutoSize = True
+        Me.txtStatus.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "Title", True))
+        Me.txtStatus.Location = New System.Drawing.Point(12, 293)
+        Me.txtStatus.Name = "txtStatus"
+        Me.txtStatus.Size = New System.Drawing.Size(51, 17)
+        Me.txtStatus.TabIndex = 37
+        Me.txtStatus.Text = "Label5"
+        '
         'SearchForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(664, 447)
+        Me.ClientSize = New System.Drawing.Size(694, 447)
+        Me.Controls.Add(Me.txtStatus)
+        Me.Controls.Add(Me.txtQuantity)
+        Me.Controls.Add(Me.dgvBook)
         Me.Controls.Add(Me.btnCart)
         Me.Controls.Add(Me.Label3)
-        Me.Controls.Add(Me.cboQuantity)
         Me.Controls.Add(Me.btnExit)
         Me.Controls.Add(Me.btnAdd)
-        Me.Controls.Add(Me.lblPrice)
-        Me.Controls.Add(Me.lblAuthor)
-        Me.Controls.Add(Me.lblISBN)
-        Me.Controls.Add(Me.lblBonus)
-        Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.lblCustName)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.txtSearchTitle)
@@ -316,19 +241,17 @@ Partial Class SearchForm
         Me.Controls.Add(Me.btnSearchTitle)
         Me.Controls.Add(Me.btnSearchAuthor)
         Me.Controls.Add(Me.Label1)
-        Me.Controls.Add(Me.btnNew)
-        Me.Controls.Add(Me.btnAll)
-        Me.Controls.Add(Me.lstBook)
         Me.Name = "SearchForm"
         Me.Text = "Search & Add"
+        CType(Me.BookstoreDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BooksBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.dgvBook, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BooksOrderLineBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.BookstoreDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
     End Sub
-
-    Friend WithEvents lstBook As ListBox
-    Friend WithEvents btnAll As Button
-    Friend WithEvents btnNew As Button
     Friend WithEvents Label1 As Label
     Friend WithEvents btnSearchAuthor As Button
     Friend WithEvents btnSearchTitle As Button
@@ -338,19 +261,17 @@ Partial Class SearchForm
     Friend WithEvents txtSearchTitle As TextBox
     Friend WithEvents Label2 As Label
     Friend WithEvents lblCustName As Label
-    Friend WithEvents lblPrice As Label
-    Friend WithEvents lblAuthor As Label
-    Friend WithEvents lblISBN As Label
-    Friend WithEvents lblBonus As Label
-    Friend WithEvents lblTitle As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
     Friend WithEvents btnAdd As Button
     Friend WithEvents btnExit As Button
-    Friend WithEvents cboQuantity As ComboBox
     Friend WithEvents Label3 As Label
     Friend WithEvents btnCart As Button
+    Friend WithEvents BookstoreDataSet As BookstoreDataSet
+    Friend WithEvents BooksBindingSource As BindingSource
+    Friend WithEvents BooksTableAdapter As BookstoreDataSetTableAdapters.BooksTableAdapter
+    Friend WithEvents dgvBook As DataGridView
+    Friend WithEvents BooksOrderLineBindingSource As BindingSource
+    Friend WithEvents OrderLineTableAdapter As BookstoreDataSetTableAdapters.OrderLineTableAdapter
+    Friend WithEvents BookstoreDataSetBindingSource As BindingSource
+    Friend WithEvents txtQuantity As TextBox
+    Friend WithEvents txtStatus As Label
 End Class

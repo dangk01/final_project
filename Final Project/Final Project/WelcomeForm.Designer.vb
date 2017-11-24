@@ -44,6 +44,7 @@ Partial Class WelcomeForm
         Me.lstNewArrivals = New System.Windows.Forms.ListBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.Promotions1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label2 = New System.Windows.Forms.Label()
         Me.lblDescriptionP = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
@@ -52,7 +53,6 @@ Partial Class WelcomeForm
         Me.lstPromotion = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Books1TableAdapter = New Final_Project.BookstoreDataSetTableAdapters.Books1TableAdapter()
-        Me.Promotions1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Promotions1TableAdapter = New Final_Project.BookstoreDataSetTableAdapters.Promotions1TableAdapter()
         Me.GroupBox2.SuspendLayout()
         CType(Me.Books1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -194,7 +194,7 @@ Partial Class WelcomeForm
         Me.Label10.Font = New System.Drawing.Font("Modern No. 20", 10.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label10.Location = New System.Drawing.Point(11, 325)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(59, 21)
+        Me.Label10.Size = New System.Drawing.Size(61, 21)
         Me.Label10.TabIndex = 9
         Me.Label10.Text = "Price:"
         '
@@ -204,7 +204,7 @@ Partial Class WelcomeForm
         Me.lblDate.Font = New System.Drawing.Font("Modern No. 20", 10.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.lblDate.Location = New System.Drawing.Point(11, 293)
         Me.lblDate.Name = "lblDate"
-        Me.lblDate.Size = New System.Drawing.Size(128, 21)
+        Me.lblDate.Size = New System.Drawing.Size(138, 21)
         Me.lblDate.TabIndex = 8
         Me.lblDate.Text = "Released Date:"
         '
@@ -224,7 +224,7 @@ Partial Class WelcomeForm
         Me.Label7.Font = New System.Drawing.Font("Modern No. 20", 10.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label7.Location = New System.Drawing.Point(11, 262)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(73, 21)
+        Me.Label7.Size = New System.Drawing.Size(77, 21)
         Me.Label7.TabIndex = 6
         Me.Label7.Text = "Author:"
         '
@@ -234,7 +234,7 @@ Partial Class WelcomeForm
         Me.Label6.Font = New System.Drawing.Font("Modern No. 20", 10.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label6.Location = New System.Drawing.Point(260, 262)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(61, 21)
+        Me.Label6.Size = New System.Drawing.Size(64, 21)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "ISBN:"
         '
@@ -275,6 +275,11 @@ Partial Class WelcomeForm
         Me.Label5.TabIndex = 10
         Me.Label5.Text = "Label5"
         '
+        'Promotions1BindingSource
+        '
+        Me.Promotions1BindingSource.DataMember = "Promotions1"
+        Me.Promotions1BindingSource.DataSource = Me.BookstoreDataSet
+        '
         'Label2
         '
         Me.Label2.AutoSize = True
@@ -300,7 +305,7 @@ Partial Class WelcomeForm
         Me.Label4.Font = New System.Drawing.Font("Modern No. 20", 10.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Label4.Location = New System.Drawing.Point(6, 232)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(130, 21)
+        Me.Label4.Size = New System.Drawing.Size(139, 21)
         Me.Label4.TabIndex = 7
         Me.Label4.Text = "Discount Rate:"
         '
@@ -349,11 +354,6 @@ Partial Class WelcomeForm
         'Books1TableAdapter
         '
         Me.Books1TableAdapter.ClearBeforeFill = True
-        '
-        'Promotions1BindingSource
-        '
-        Me.Promotions1BindingSource.DataMember = "Promotions1"
-        Me.Promotions1BindingSource.DataSource = Me.BookstoreDataSet
         '
         'Promotions1TableAdapter
         '
