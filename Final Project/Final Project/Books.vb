@@ -16,10 +16,6 @@
 
     End Function
 
-    Public Function GetByBookName(ByVal title As String) As DataTable
-        Dim table As DataTable = adapter.GetData()
-        table.DefaultView.RowFilter = "Title = " & title
-        Return table
-    End Function
+
 
 End Class

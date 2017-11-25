@@ -26,6 +26,15 @@
     End Sub
 
     Private Sub btnLog_Click_1(sender As Object, e As EventArgs) Handles btnLog.Click
-
+        Dim id As Integer
+        If Integer.TryParse(txtID.Text, id) Then
+            If mCustomers.checkID(id) = True Then
+                MainForm.ShowDialog()
+            Else
+                errProvider.SetError(txtID, "This app is exclusive for the customers for our store only. Sorry for this inconvenience.")
+            End If
+        Else
+            errProvider.SetError(txtID, "This is not a vaild input. Please enter again.")
+        End If
     End Sub
 End Class

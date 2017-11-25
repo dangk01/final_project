@@ -54,11 +54,15 @@ Partial Class WelcomeForm
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Books1TableAdapter = New Final_Project.BookstoreDataSetTableAdapters.Books1TableAdapter()
         Me.Promotions1TableAdapter = New Final_Project.BookstoreDataSetTableAdapters.Promotions1TableAdapter()
+        Me.errProvider = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.GroupBox2.SuspendLayout()
         CType(Me.Books1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookstoreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
         CType(Me.Promotions1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.errProvider, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'btnClose
@@ -359,6 +363,14 @@ Partial Class WelcomeForm
         '
         Me.Promotions1TableAdapter.ClearBeforeFill = True
         '
+        'errProvider
+        '
+        Me.errProvider.ContainerControl = Me
+        '
+        'ErrorProvider1
+        '
+        Me.ErrorProvider1.ContainerControl = Me
+        '
         'WelcomeForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -381,6 +393,8 @@ Partial Class WelcomeForm
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
         CType(Me.Promotions1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.errProvider, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -417,4 +431,6 @@ Partial Class WelcomeForm
     Friend WithEvents Label2 As Label
     Friend WithEvents Promotions1BindingSource As BindingSource
     Friend WithEvents Promotions1TableAdapter As BookstoreDataSetTableAdapters.Promotions1TableAdapter
+    Friend WithEvents errProvider As ErrorProvider
+    Friend WithEvents ErrorProvider1 As ErrorProvider
 End Class

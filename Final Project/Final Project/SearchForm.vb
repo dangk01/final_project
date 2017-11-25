@@ -39,7 +39,7 @@
 
     Private Sub btnSearchTitle_Click(sender As Object, e As EventArgs) Handles btnSearchTitle.Click
         Dim bookName As String = ""
-        dgvBook.DataSource = mBooks.GetByBookName(bookName)
+
 
     End Sub
 End Class

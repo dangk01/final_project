@@ -205,7 +205,7 @@ Partial Class SearchForm
         '
         'txtQuantity
         '
-        Me.txtQuantity.Location = New System.Drawing.Point(460, 316)
+        Me.txtQuantity.Location = New System.Drawing.Point(432, 319)
         Me.txtQuantity.Name = "txtQuantity"
         Me.txtQuantity.Size = New System.Drawing.Size(100, 22)
         Me.txtQuantity.TabIndex = 35
@@ -216,9 +216,8 @@ Partial Class SearchForm
         Me.txtStatus.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.BooksBindingSource, "Title", True))
         Me.txtStatus.Location = New System.Drawing.Point(12, 293)
         Me.txtStatus.Name = "txtStatus"
-        Me.txtStatus.Size = New System.Drawing.Size(51, 17)
+        Me.txtStatus.Size = New System.Drawing.Size(0, 17)
         Me.txtStatus.TabIndex = 37
-        Me.txtStatus.Text = "Label5"
         '
         'SearchForm
         '
