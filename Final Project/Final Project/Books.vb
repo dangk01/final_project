@@ -25,6 +25,12 @@
 
     End Function
 
+    Public Function GetByBookAuthor(ByVal author As String) As DataTable
+        Dim table As DataTable = adapter.GetDataByName(author)
+        Return table
+
+    End Function
+
     Public Function FindByBookID(ByVal bookid As Integer) As BookstoreDataSet.BooksRow
         Dim table As BookstoreDataSet.BooksDataTable
         table = adapter.GetData()

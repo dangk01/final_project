@@ -70,4 +70,16 @@
             lblStatus.Text = "Please choose 1 item to add to cart."
         End If
     End Sub
+
+    Private Sub btnSearchAuthor_Click(sender As Object, e As EventArgs) Handles btnSearchAuthor.Click
+        Dim bookAUthor As String
+        lblStatus.Text = ""
+        bookAUthor = txtSearchAuthor.Text
+        If txtSearchAuthor.Text = "" Then
+            lblStatus.Text = "Please enter a name."
+        Else
+            dgvBook.DataSource = mBooks.GetByBookAuthor(bookAUthor)
+        End If
+
+    End Sub
 End Class
