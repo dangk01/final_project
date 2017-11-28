@@ -1,16 +1,11 @@
 ﻿Public Class WelcomeForm
     Dim mCustomers As New Customers
-
+    Public customerId As Integer
     Private Sub btnClose_Click(sender As Object, e As EventArgs)
         Me.Close()
     End Sub
 
-    Private Sub btnLog_Click(sender As Object, e As EventArgs)
-        txtID.Text = ""
-        MainForm.ShowDialog()
 
-
-    End Sub
 
     Private Sub WelcomeForm_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         'TODO: This line of code loads data into the 'BookstoreDataSet.Promotions1' table. You can move, or remove it, as needed.
@@ -30,11 +25,13 @@
         If Integer.TryParse(txtID.Text, id) Then
             If mCustomers.checkID(id) = True Then
                 MainForm.ShowDialog()
+                customerId = id
             Else
                 errProvider.SetError(txtID, "This app is exclusive for the customers for our store only. Sorry for this inconvenience.")
             End If
         Else
             errProvider.SetError(txtID, "This is not a vaild input. Please enter again.")
         End If
+        txtID.Text = ""
     End Sub
 End Class

@@ -190,7 +190,6 @@ Partial Class WelcomeForm
         Me.lblTitle.Name = "lblTitle"
         Me.lblTitle.Size = New System.Drawing.Size(585, 47)
         Me.lblTitle.TabIndex = 11
-        Me.lblTitle.Text = "Label12"
         '
         'Label10
         '

@@ -23,32 +23,21 @@ Partial Class CartForm
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
         Me.lstCart = New System.Windows.Forms.ListBox()
-        Me.lblPrice = New System.Windows.Forms.Label()
-        Me.lblAuthor = New System.Windows.Forms.Label()
-        Me.lblISBN = New System.Windows.Forms.Label()
-        Me.lblBonus = New System.Windows.Forms.Label()
-        Me.lblTitle = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.lblCountItems = New System.Windows.Forms.Label()
         Me.btnPlace = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.txtSubtotal = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.Label3 = New System.Windows.Forms.Label()
         Me.radSaving = New System.Windows.Forms.RadioButton()
         Me.radNormal = New System.Windows.Forms.RadioButton()
         Me.radExpress = New System.Windows.Forms.RadioButton()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.lblSubtotal = New System.Windows.Forms.Label()
-        Me.btnPromotion = New System.Windows.Forms.Label()
+        Me.lblPromotion = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.lblBonusOrder = New System.Windows.Forms.Label()
+        Me.Label5 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -58,107 +47,8 @@ Partial Class CartForm
         Me.lstCart.ItemHeight = 16
         Me.lstCart.Location = New System.Drawing.Point(26, 63)
         Me.lstCart.Name = "lstCart"
-        Me.lstCart.Size = New System.Drawing.Size(208, 116)
+        Me.lstCart.Size = New System.Drawing.Size(208, 276)
         Me.lstCart.TabIndex = 0
-        '
-        'lblPrice
-        '
-        Me.lblPrice.AutoSize = True
-        Me.lblPrice.Location = New System.Drawing.Point(110, 323)
-        Me.lblPrice.Name = "lblPrice"
-        Me.lblPrice.Size = New System.Drawing.Size(59, 17)
-        Me.lblPrice.TabIndex = 25
-        Me.lblPrice.Text = "Label16"
-        '
-        'lblAuthor
-        '
-        Me.lblAuthor.AutoSize = True
-        Me.lblAuthor.Location = New System.Drawing.Point(110, 237)
-        Me.lblAuthor.Name = "lblAuthor"
-        Me.lblAuthor.Size = New System.Drawing.Size(59, 17)
-        Me.lblAuthor.TabIndex = 24
-        Me.lblAuthor.Text = "Label15"
-        '
-        'lblISBN
-        '
-        Me.lblISBN.AutoSize = True
-        Me.lblISBN.Location = New System.Drawing.Point(110, 267)
-        Me.lblISBN.Name = "lblISBN"
-        Me.lblISBN.Size = New System.Drawing.Size(59, 17)
-        Me.lblISBN.TabIndex = 23
-        Me.lblISBN.Text = "Label14"
-        '
-        'lblBonus
-        '
-        Me.lblBonus.AutoSize = True
-        Me.lblBonus.Location = New System.Drawing.Point(110, 296)
-        Me.lblBonus.Name = "lblBonus"
-        Me.lblBonus.Size = New System.Drawing.Size(42, 17)
-        Me.lblBonus.TabIndex = 22
-        Me.lblBonus.Text = "None"
-        '
-        'lblTitle
-        '
-        Me.lblTitle.AutoSize = True
-        Me.lblTitle.Location = New System.Drawing.Point(110, 206)
-        Me.lblTitle.Name = "lblTitle"
-        Me.lblTitle.Size = New System.Drawing.Size(59, 17)
-        Me.lblTitle.TabIndex = 21
-        Me.lblTitle.Text = "Label12"
-        '
-        'Label10
-        '
-        Me.Label10.AutoSize = True
-        Me.Label10.Location = New System.Drawing.Point(33, 323)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(44, 17)
-        Me.Label10.TabIndex = 20
-        Me.Label10.Text = "Price:"
-        '
-        'Label9
-        '
-        Me.Label9.AutoSize = True
-        Me.Label9.Location = New System.Drawing.Point(33, 296)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(56, 17)
-        Me.Label9.TabIndex = 19
-        Me.Label9.Text = "Bonus: "
-        '
-        'Label8
-        '
-        Me.Label8.AutoSize = True
-        Me.Label8.Location = New System.Drawing.Point(33, 206)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(39, 17)
-        Me.Label8.TabIndex = 18
-        Me.Label8.Text = "Title:"
-        '
-        'Label7
-        '
-        Me.Label7.AutoSize = True
-        Me.Label7.Location = New System.Drawing.Point(33, 237)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(54, 17)
-        Me.Label7.TabIndex = 17
-        Me.Label7.Text = "Author:"
-        '
-        'Label6
-        '
-        Me.Label6.AutoSize = True
-        Me.Label6.Location = New System.Drawing.Point(33, 267)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(43, 17)
-        Me.Label6.TabIndex = 16
-        Me.Label6.Text = "ISBN:"
-        '
-        'lblCountItems
-        '
-        Me.lblCountItems.AutoSize = True
-        Me.lblCountItems.Location = New System.Drawing.Point(26, 31)
-        Me.lblCountItems.Name = "lblCountItems"
-        Me.lblCountItems.Size = New System.Drawing.Size(51, 17)
-        Me.lblCountItems.TabIndex = 26
-        Me.lblCountItems.Text = "Label1"
         '
         'btnPlace
         '
@@ -178,14 +68,14 @@ Partial Class CartForm
         Me.btnClose.Text = "Close"
         Me.btnClose.UseVisualStyleBackColor = True
         '
-        'Label1
+        'txtSubtotal
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(287, 63)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(64, 17)
-        Me.Label1.TabIndex = 29
-        Me.Label1.Text = "Subtotal:"
+        Me.txtSubtotal.AutoSize = True
+        Me.txtSubtotal.Location = New System.Drawing.Point(287, 63)
+        Me.txtSubtotal.Name = "txtSubtotal"
+        Me.txtSubtotal.Size = New System.Drawing.Size(64, 17)
+        Me.txtSubtotal.TabIndex = 29
+        Me.txtSubtotal.Text = "Subtotal:"
         '
         'Label2
         '
@@ -198,7 +88,6 @@ Partial Class CartForm
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label3)
         Me.GroupBox1.Controls.Add(Me.radSaving)
         Me.GroupBox1.Controls.Add(Me.radNormal)
         Me.GroupBox1.Controls.Add(Me.radExpress)
@@ -207,21 +96,12 @@ Partial Class CartForm
         Me.GroupBox1.Size = New System.Drawing.Size(256, 111)
         Me.GroupBox1.TabIndex = 31
         Me.GroupBox1.TabStop = False
-        Me.GroupBox1.Text = "GroupBox1"
-        '
-        'Label3
-        '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(10, 18)
-        Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(167, 17)
-        Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Please the shipping type:"
+        Me.GroupBox1.Text = "Please the shipping type:"
         '
         'radSaving
         '
         Me.radSaving.AutoSize = True
-        Me.radSaving.Location = New System.Drawing.Point(6, 84)
+        Me.radSaving.Location = New System.Drawing.Point(6, 75)
         Me.radSaving.Name = "radSaving"
         Me.radSaving.Size = New System.Drawing.Size(208, 21)
         Me.radSaving.TabIndex = 2
@@ -232,7 +112,7 @@ Partial Class CartForm
         'radNormal
         '
         Me.radNormal.AutoSize = True
-        Me.radNormal.Location = New System.Drawing.Point(6, 60)
+        Me.radNormal.Location = New System.Drawing.Point(6, 48)
         Me.radNormal.Name = "radNormal"
         Me.radNormal.Size = New System.Drawing.Size(202, 21)
         Me.radNormal.TabIndex = 1
@@ -243,7 +123,7 @@ Partial Class CartForm
         'radExpress
         '
         Me.radExpress.AutoSize = True
-        Me.radExpress.Location = New System.Drawing.Point(6, 36)
+        Me.radExpress.Location = New System.Drawing.Point(7, 21)
         Me.radExpress.Name = "radExpress"
         Me.radExpress.Size = New System.Drawing.Size(207, 21)
         Me.radExpress.TabIndex = 0
@@ -265,18 +145,18 @@ Partial Class CartForm
         Me.lblSubtotal.AutoSize = True
         Me.lblSubtotal.Location = New System.Drawing.Point(479, 63)
         Me.lblSubtotal.Name = "lblSubtotal"
-        Me.lblSubtotal.Size = New System.Drawing.Size(51, 17)
+        Me.lblSubtotal.Size = New System.Drawing.Size(16, 17)
         Me.lblSubtotal.TabIndex = 33
-        Me.lblSubtotal.Text = "Label4"
+        Me.lblSubtotal.Text = "0"
         '
-        'btnPromotion
+        'lblPromotion
         '
-        Me.btnPromotion.AutoSize = True
-        Me.btnPromotion.Location = New System.Drawing.Point(287, 123)
-        Me.btnPromotion.Name = "btnPromotion"
-        Me.btnPromotion.Size = New System.Drawing.Size(51, 17)
-        Me.btnPromotion.TabIndex = 34
-        Me.btnPromotion.Text = "Label4"
+        Me.lblPromotion.AutoSize = True
+        Me.lblPromotion.Location = New System.Drawing.Point(287, 123)
+        Me.lblPromotion.Name = "lblPromotion"
+        Me.lblPromotion.Size = New System.Drawing.Size(51, 17)
+        Me.lblPromotion.TabIndex = 34
+        Me.lblPromotion.Text = "Label4"
         '
         'Label4
         '
@@ -292,46 +172,45 @@ Partial Class CartForm
         Me.lblTotal.AutoSize = True
         Me.lblTotal.Location = New System.Drawing.Point(337, 257)
         Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(51, 17)
+        Me.lblTotal.Size = New System.Drawing.Size(16, 17)
         Me.lblTotal.TabIndex = 36
-        Me.lblTotal.Text = "Label5"
+        Me.lblTotal.Text = "0"
         '
         'lblBonusOrder
         '
         Me.lblBonusOrder.AutoSize = True
         Me.lblBonusOrder.Location = New System.Drawing.Point(263, 316)
         Me.lblBonusOrder.Name = "lblBonusOrder"
-        Me.lblBonusOrder.Size = New System.Drawing.Size(399, 17)
+        Me.lblBonusOrder.Size = New System.Drawing.Size(391, 17)
         Me.lblBonusOrder.TabIndex = 37
-        Me.lblBonusOrder.Text = "Note: You can get an extra bonus when purchasing over $300"
+        Me.lblBonusOrder.Text = "Note: You can get an extra bonus when purchasing over $60"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(23, 27)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(89, 17)
+        Me.Label5.TabIndex = 38
+        Me.Label5.Text = "Your item(s):"
         '
         'CartForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(674, 400)
+        Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.lblBonusOrder)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.btnPromotion)
+        Me.Controls.Add(Me.lblPromotion)
         Me.Controls.Add(Me.lblSubtotal)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.GroupBox1)
         Me.Controls.Add(Me.Label2)
-        Me.Controls.Add(Me.Label1)
+        Me.Controls.Add(Me.txtSubtotal)
         Me.Controls.Add(Me.btnClose)
         Me.Controls.Add(Me.btnPlace)
-        Me.Controls.Add(Me.lblCountItems)
-        Me.Controls.Add(Me.lblPrice)
-        Me.Controls.Add(Me.lblAuthor)
-        Me.Controls.Add(Me.lblISBN)
-        Me.Controls.Add(Me.lblBonus)
-        Me.Controls.Add(Me.lblTitle)
-        Me.Controls.Add(Me.Label10)
-        Me.Controls.Add(Me.Label9)
-        Me.Controls.Add(Me.Label8)
-        Me.Controls.Add(Me.Label7)
-        Me.Controls.Add(Me.Label6)
         Me.Controls.Add(Me.lstCart)
         Me.Name = "CartForm"
         Me.Text = "Your cart"
@@ -343,30 +222,19 @@ Partial Class CartForm
     End Sub
 
     Friend WithEvents lstCart As ListBox
-    Friend WithEvents lblPrice As Label
-    Friend WithEvents lblAuthor As Label
-    Friend WithEvents lblISBN As Label
-    Friend WithEvents lblBonus As Label
-    Friend WithEvents lblTitle As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents lblCountItems As Label
     Friend WithEvents btnPlace As Button
     Friend WithEvents btnClose As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents txtSubtotal As Label
     Friend WithEvents Label2 As Label
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents Label3 As Label
     Friend WithEvents radSaving As RadioButton
     Friend WithEvents radNormal As RadioButton
     Friend WithEvents radExpress As RadioButton
     Friend WithEvents btnDelete As Button
     Friend WithEvents lblSubtotal As Label
-    Friend WithEvents btnPromotion As Label
+    Friend WithEvents lblPromotion As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents lblTotal As Label
     Friend WithEvents lblBonusOrder As Label
+    Friend WithEvents Label5 As Label
 End Class
