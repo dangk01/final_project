@@ -1,7 +1,6 @@
 ﻿Public Class SearchForm
     Private mBooks As New Books
     Private formLoading As Boolean = True
-    Dim cart As New CartForm
 
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles btnExit.Click
@@ -54,18 +53,21 @@
 
     Private Sub btnAdd_Click(sender As Object, e As EventArgs) Handles btnAdd.Click
         Dim rows As BookstoreDataSet.BooksRow
-
-        Dim price As Decimal
         If dgvBook.SelectedRows.Count > 0 Then
             Dim bookid As Integer = CInt(dgvBook.SelectedRows(0).Cells(0).Value)
-            rows = mBooks.FindByBookID(bookid)
-            price = rows.Price
-            If cart.bookOrdered.ContainsKey(bookid) Then
-                lblStatus.Text = "This item is already in your cart."
+            If Not Cart.bookIDs.Contains(bookid) Then
+                rows = mBooks.FindByBookID(bookid)
+                If rows.Quantity = 0 Then
+                    lblStatus.Text = "This item is out of stock."
+                    Return
+                End If
+                Cart.bookIDs.Add(bookid)
+                lblStatus.Text = "Item " & bookid & " added successfully."
             Else
-                cart.bookOrdered.Add(bookid, New Order(bookid, rows.Title, rows.Author_Name, rows.Date_, rows.Price))
-                lblStatus.Text = "Item " & bookid & " added successfully." 
+                lblStatus.Text = "This item is already in your cart."
             End If
+
+
         Else
             lblStatus.Text = "Please choose 1 item to add to cart."
         End If
@@ -79,6 +81,7 @@
             lblStatus.Text = "Please enter a name."
         Else
             dgvBook.DataSource = mBooks.GetByBookAuthor(bookAUthor)
+
         End If
 
     End Sub

@@ -42,7 +42,7 @@ Partial Class ExtraBonusForm
         Me.cboExtraBonus.FormattingEnabled = True
         Me.cboExtraBonus.Location = New System.Drawing.Point(24, 94)
         Me.cboExtraBonus.Name = "cboExtraBonus"
-        Me.cboExtraBonus.Size = New System.Drawing.Size(121, 24)
+        Me.cboExtraBonus.Size = New System.Drawing.Size(205, 24)
         Me.cboExtraBonus.TabIndex = 2
         '
         'Label1

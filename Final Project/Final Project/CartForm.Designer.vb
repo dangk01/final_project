@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class CartForm
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,24 +20,27 @@ Partial Class CartForm
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.lstCart = New System.Windows.Forms.ListBox()
         Me.btnPlace = New System.Windows.Forms.Button()
         Me.btnClose = New System.Windows.Forms.Button()
         Me.txtSubtotal = New System.Windows.Forms.Label()
         Me.Label2 = New System.Windows.Forms.Label()
-        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
-        Me.radSaving = New System.Windows.Forms.RadioButton()
-        Me.radNormal = New System.Windows.Forms.RadioButton()
-        Me.radExpress = New System.Windows.Forms.RadioButton()
         Me.btnDelete = New System.Windows.Forms.Button()
         Me.lblSubtotal = New System.Windows.Forms.Label()
-        Me.lblPromotion = New System.Windows.Forms.Label()
+        Me.label = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.lblTotal = New System.Windows.Forms.Label()
         Me.lblBonusOrder = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
+        Me.lblPromotion = New System.Windows.Forms.Label()
+        Me.lblDiscountAmount = New System.Windows.Forms.Label()
+        Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.radSaving = New System.Windows.Forms.RadioButton()
+        Me.btnChoose = New System.Windows.Forms.Button()
+        Me.radNormal = New System.Windows.Forms.RadioButton()
+        Me.radExpress = New System.Windows.Forms.RadioButton()
         Me.GroupBox1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -80,11 +83,93 @@ Partial Class CartForm
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(287, 92)
+        Me.Label2.Location = New System.Drawing.Point(249, 92)
         Me.Label2.Name = "Label2"
         Me.Label2.Size = New System.Drawing.Size(176, 17)
         Me.Label2.TabIndex = 30
         Me.Label2.Text = "Promotions/Offers applied:"
+        '
+        'btnDelete
+        '
+        Me.btnDelete.Location = New System.Drawing.Point(36, 355)
+        Me.btnDelete.Name = "btnDelete"
+        Me.btnDelete.Size = New System.Drawing.Size(133, 33)
+        Me.btnDelete.TabIndex = 32
+        Me.btnDelete.Text = "Delete this item"
+        Me.btnDelete.UseVisualStyleBackColor = True
+        '
+        'lblSubtotal
+        '
+        Me.lblSubtotal.AutoSize = True
+        Me.lblSubtotal.Location = New System.Drawing.Point(479, 63)
+        Me.lblSubtotal.Name = "lblSubtotal"
+        Me.lblSubtotal.Size = New System.Drawing.Size(24, 17)
+        Me.lblSubtotal.TabIndex = 33
+        Me.lblSubtotal.Text = "$0"
+        '
+        'label
+        '
+        Me.label.AutoSize = True
+        Me.label.Location = New System.Drawing.Point(249, 123)
+        Me.label.Name = "label"
+        Me.label.Size = New System.Drawing.Size(71, 17)
+        Me.label.TabIndex = 34
+        Me.label.Text = "Discount: "
+        '
+        'Label4
+        '
+        Me.Label4.AutoSize = True
+        Me.Label4.Location = New System.Drawing.Point(287, 257)
+        Me.Label4.Name = "Label4"
+        Me.Label4.Size = New System.Drawing.Size(44, 17)
+        Me.Label4.TabIndex = 35
+        Me.Label4.Text = "Total:"
+        '
+        'lblTotal
+        '
+        Me.lblTotal.AutoSize = True
+        Me.lblTotal.Location = New System.Drawing.Point(337, 257)
+        Me.lblTotal.Name = "lblTotal"
+        Me.lblTotal.Size = New System.Drawing.Size(16, 17)
+        Me.lblTotal.TabIndex = 36
+        Me.lblTotal.Text = "0"
+        Me.lblTotal.Visible = False
+        '
+        'lblBonusOrder
+        '
+        Me.lblBonusOrder.AutoSize = True
+        Me.lblBonusOrder.Location = New System.Drawing.Point(263, 316)
+        Me.lblBonusOrder.Name = "lblBonusOrder"
+        Me.lblBonusOrder.Size = New System.Drawing.Size(391, 17)
+        Me.lblBonusOrder.TabIndex = 37
+        Me.lblBonusOrder.Text = "Note: You can get an extra bonus when purchasing over $60"
+        '
+        'Label5
+        '
+        Me.Label5.AutoSize = True
+        Me.Label5.Location = New System.Drawing.Point(23, 27)
+        Me.Label5.Name = "Label5"
+        Me.Label5.Size = New System.Drawing.Size(89, 17)
+        Me.Label5.TabIndex = 38
+        Me.Label5.Text = "Your item(s):"
+        '
+        'lblPromotion
+        '
+        Me.lblPromotion.AutoSize = True
+        Me.lblPromotion.Location = New System.Drawing.Point(461, 92)
+        Me.lblPromotion.Name = "lblPromotion"
+        Me.lblPromotion.Size = New System.Drawing.Size(42, 17)
+        Me.lblPromotion.TabIndex = 39
+        Me.lblPromotion.Text = "None"
+        '
+        'lblDiscountAmount
+        '
+        Me.lblDiscountAmount.AutoSize = True
+        Me.lblDiscountAmount.Location = New System.Drawing.Point(461, 123)
+        Me.lblDiscountAmount.Name = "lblDiscountAmount"
+        Me.lblDiscountAmount.Size = New System.Drawing.Size(24, 17)
+        Me.lblDiscountAmount.TabIndex = 40
+        Me.lblDiscountAmount.Text = "$0"
         '
         'GroupBox1
         '
@@ -109,6 +194,15 @@ Partial Class CartForm
         Me.radSaving.Text = "Saving Shipping (7-14 days)"
         Me.radSaving.UseVisualStyleBackColor = True
         '
+        'btnChoose
+        '
+        Me.btnChoose.Location = New System.Drawing.Point(552, 153)
+        Me.btnChoose.Name = "btnChoose"
+        Me.btnChoose.Size = New System.Drawing.Size(75, 23)
+        Me.btnChoose.TabIndex = 3
+        Me.btnChoose.Text = "Choose"
+        Me.btnChoose.UseVisualStyleBackColor = True
+        '
         'radNormal
         '
         Me.radNormal.AutoSize = True
@@ -131,79 +225,19 @@ Partial Class CartForm
         Me.radExpress.Text = "Express Shipping (2-3 days)"
         Me.radExpress.UseVisualStyleBackColor = True
         '
-        'btnDelete
-        '
-        Me.btnDelete.Location = New System.Drawing.Point(36, 355)
-        Me.btnDelete.Name = "btnDelete"
-        Me.btnDelete.Size = New System.Drawing.Size(133, 33)
-        Me.btnDelete.TabIndex = 32
-        Me.btnDelete.Text = "Delete this item"
-        Me.btnDelete.UseVisualStyleBackColor = True
-        '
-        'lblSubtotal
-        '
-        Me.lblSubtotal.AutoSize = True
-        Me.lblSubtotal.Location = New System.Drawing.Point(479, 63)
-        Me.lblSubtotal.Name = "lblSubtotal"
-        Me.lblSubtotal.Size = New System.Drawing.Size(16, 17)
-        Me.lblSubtotal.TabIndex = 33
-        Me.lblSubtotal.Text = "0"
-        '
-        'lblPromotion
-        '
-        Me.lblPromotion.AutoSize = True
-        Me.lblPromotion.Location = New System.Drawing.Point(287, 123)
-        Me.lblPromotion.Name = "lblPromotion"
-        Me.lblPromotion.Size = New System.Drawing.Size(51, 17)
-        Me.lblPromotion.TabIndex = 34
-        Me.lblPromotion.Text = "Label4"
-        '
-        'Label4
-        '
-        Me.Label4.AutoSize = True
-        Me.Label4.Location = New System.Drawing.Point(287, 257)
-        Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(44, 17)
-        Me.Label4.TabIndex = 35
-        Me.Label4.Text = "Total:"
-        '
-        'lblTotal
-        '
-        Me.lblTotal.AutoSize = True
-        Me.lblTotal.Location = New System.Drawing.Point(337, 257)
-        Me.lblTotal.Name = "lblTotal"
-        Me.lblTotal.Size = New System.Drawing.Size(16, 17)
-        Me.lblTotal.TabIndex = 36
-        Me.lblTotal.Text = "0"
-        '
-        'lblBonusOrder
-        '
-        Me.lblBonusOrder.AutoSize = True
-        Me.lblBonusOrder.Location = New System.Drawing.Point(263, 316)
-        Me.lblBonusOrder.Name = "lblBonusOrder"
-        Me.lblBonusOrder.Size = New System.Drawing.Size(391, 17)
-        Me.lblBonusOrder.TabIndex = 37
-        Me.lblBonusOrder.Text = "Note: You can get an extra bonus when purchasing over $60"
-        '
-        'Label5
-        '
-        Me.Label5.AutoSize = True
-        Me.Label5.Location = New System.Drawing.Point(23, 27)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(89, 17)
-        Me.Label5.TabIndex = 38
-        Me.Label5.Text = "Your item(s):"
-        '
         'CartForm
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(674, 400)
+        Me.Controls.Add(Me.btnChoose)
+        Me.Controls.Add(Me.lblDiscountAmount)
+        Me.Controls.Add(Me.lblPromotion)
         Me.Controls.Add(Me.Label5)
         Me.Controls.Add(Me.lblBonusOrder)
         Me.Controls.Add(Me.lblTotal)
         Me.Controls.Add(Me.Label4)
-        Me.Controls.Add(Me.lblPromotion)
+        Me.Controls.Add(Me.label)
         Me.Controls.Add(Me.lblSubtotal)
         Me.Controls.Add(Me.btnDelete)
         Me.Controls.Add(Me.GroupBox1)
@@ -226,15 +260,18 @@ Partial Class CartForm
     Friend WithEvents btnClose As Button
     Friend WithEvents txtSubtotal As Label
     Friend WithEvents Label2 As Label
-    Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents radSaving As RadioButton
-    Friend WithEvents radNormal As RadioButton
-    Friend WithEvents radExpress As RadioButton
     Friend WithEvents btnDelete As Button
     Friend WithEvents lblSubtotal As Label
-    Friend WithEvents lblPromotion As Label
+    Friend WithEvents label As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents lblTotal As Label
     Friend WithEvents lblBonusOrder As Label
     Friend WithEvents Label5 As Label
+    Friend WithEvents lblPromotion As Label
+    Friend WithEvents lblDiscountAmount As Label
+    Friend WithEvents GroupBox1 As GroupBox
+    Friend WithEvents radSaving As RadioButton
+    Friend WithEvents radNormal As RadioButton
+    Friend WithEvents radExpress As RadioButton
+    Friend WithEvents btnChoose As Button
 End Class

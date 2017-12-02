@@ -1,6 +1,9 @@
 ﻿
 
 Partial Public Class BookstoreDataSet
+    Partial Public Class Promotions1DataTable
+    End Class
+
     Partial Public Class CustomersDataTable
         Private Sub CustomersDataTable_CustomersRowChanging(sender As Object, e As CustomersRowChangeEvent) Handles Me.CustomersRowChanging
 

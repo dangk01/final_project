@@ -88,6 +88,7 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Bonus.vb" />
     <Compile Include="Books.vb" />
     <Compile Include="BookstoreDataSet.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -97,6 +98,7 @@
     <Compile Include="BookstoreDataSet.vb">
       <DependentUpon>BookstoreDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="Cart.vb" />
     <Compile Include="CartForm.Designer.vb">
       <DependentUpon>CartForm.vb</DependentUpon>
     </Compile>
@@ -123,6 +125,9 @@
     <Compile Include="OrderHistoryForm.vb">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Promotions.vb" />
+    <Compile Include="ReviewOrder.vb" />
+    <Compile Include="Shipping.vb" />
     <Compile Include="WelcomeForm.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -227,8 +232,8 @@
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
     <Content Include="Bookstore_log.ldf">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
       <DependentUpon>Bookstore.mdf</DependentUpon>
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />

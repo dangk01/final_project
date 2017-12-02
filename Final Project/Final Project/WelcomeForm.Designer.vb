@@ -43,24 +43,22 @@ Partial Class WelcomeForm
         Me.Label6 = New System.Windows.Forms.Label()
         Me.lstNewArrivals = New System.Windows.Forms.ListBox()
         Me.GroupBox1 = New System.Windows.Forms.GroupBox()
+        Me.lblRate = New System.Windows.Forms.Label()
         Me.Label5 = New System.Windows.Forms.Label()
-        Me.Promotions1BindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.Label2 = New System.Windows.Forms.Label()
-        Me.lblDescriptionP = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Label3 = New System.Windows.Forms.Label()
-        Me.lblActivePeriod = New System.Windows.Forms.Label()
         Me.lstPromotion = New System.Windows.Forms.ListBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.Books1TableAdapter = New Final_Project.BookstoreDataSetTableAdapters.Books1TableAdapter()
-        Me.Promotions1TableAdapter = New Final_Project.BookstoreDataSetTableAdapters.Promotions1TableAdapter()
         Me.errProvider = New System.Windows.Forms.ErrorProvider(Me.components)
         Me.ErrorProvider1 = New System.Windows.Forms.ErrorProvider(Me.components)
+        Me.lblStart = New System.Windows.Forms.Label()
+        Me.Label2 = New System.Windows.Forms.Label()
+        Me.lblEnd = New System.Windows.Forms.Label()
         Me.GroupBox2.SuspendLayout()
         CType(Me.Books1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.BookstoreDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.GroupBox1.SuspendLayout()
-        CType(Me.Promotions1BindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.errProvider, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -95,9 +93,9 @@ Partial Class WelcomeForm
         Me.Label13.AutoSize = True
         Me.Label13.Location = New System.Drawing.Point(54, 403)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(51, 17)
+        Me.Label13.Size = New System.Drawing.Size(55, 17)
         Me.Label13.TabIndex = 22
-        Me.Label13.Text = "Log in:"
+        Me.Label13.Text = "LOG IN"
         '
         'Label12
         '
@@ -154,7 +152,7 @@ Partial Class WelcomeForm
         Me.lblAuthor.AutoSize = True
         Me.lblAuthor.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblAuthor.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Books1BindingSource, "Author Name", True))
-        Me.lblAuthor.Location = New System.Drawing.Point(90, 262)
+        Me.lblAuthor.Location = New System.Drawing.Point(88, 266)
         Me.lblAuthor.Name = "lblAuthor"
         Me.lblAuthor.Size = New System.Drawing.Size(61, 19)
         Me.lblAuthor.TabIndex = 14
@@ -165,7 +163,7 @@ Partial Class WelcomeForm
         Me.lblISBN.AutoSize = True
         Me.lblISBN.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
         Me.lblISBN.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Books1BindingSource, "BookId", True))
-        Me.lblISBN.Location = New System.Drawing.Point(352, 260)
+        Me.lblISBN.Location = New System.Drawing.Point(352, 262)
         Me.lblISBN.Name = "lblISBN"
         Me.lblISBN.Size = New System.Drawing.Size(61, 19)
         Me.lblISBN.TabIndex = 13
@@ -254,59 +252,44 @@ Partial Class WelcomeForm
         '
         'GroupBox1
         '
-        Me.GroupBox1.Controls.Add(Me.Label5)
+        Me.GroupBox1.Controls.Add(Me.lblEnd)
         Me.GroupBox1.Controls.Add(Me.Label2)
-        Me.GroupBox1.Controls.Add(Me.lblDescriptionP)
+        Me.GroupBox1.Controls.Add(Me.lblStart)
+        Me.GroupBox1.Controls.Add(Me.lblRate)
+        Me.GroupBox1.Controls.Add(Me.Label5)
         Me.GroupBox1.Controls.Add(Me.Label4)
         Me.GroupBox1.Controls.Add(Me.Label3)
-        Me.GroupBox1.Controls.Add(Me.lblActivePeriod)
         Me.GroupBox1.Controls.Add(Me.lstPromotion)
         Me.GroupBox1.Location = New System.Drawing.Point(45, 69)
         Me.GroupBox1.Name = "GroupBox1"
-        Me.GroupBox1.Size = New System.Drawing.Size(230, 279)
+        Me.GroupBox1.Size = New System.Drawing.Size(230, 331)
         Me.GroupBox1.TabIndex = 19
         Me.GroupBox1.TabStop = False
         Me.GroupBox1.Text = "Active Promotions/Offers: "
         '
+        'lblRate
+        '
+        Me.lblRate.AutoSize = True
+        Me.lblRate.Location = New System.Drawing.Point(159, 295)
+        Me.lblRate.Name = "lblRate"
+        Me.lblRate.Size = New System.Drawing.Size(51, 17)
+        Me.lblRate.TabIndex = 11
+        Me.lblRate.Text = "Label2"
+        '
         'Label5
         '
         Me.Label5.AutoSize = True
-        Me.Label5.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Promotions1BindingSource, "EndDate", True))
-        Me.Label5.Location = New System.Drawing.Point(107, 207)
+        Me.Label5.Location = New System.Drawing.Point(13, 207)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(51, 17)
+        Me.Label5.Size = New System.Drawing.Size(44, 17)
         Me.Label5.TabIndex = 10
-        Me.Label5.Text = "Label5"
-        '
-        'Promotions1BindingSource
-        '
-        Me.Promotions1BindingSource.DataMember = "Promotions1"
-        Me.Promotions1BindingSource.DataSource = Me.BookstoreDataSet
-        '
-        'Label2
-        '
-        Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(91, 207)
-        Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(13, 17)
-        Me.Label2.TabIndex = 9
-        Me.Label2.Text = "-"
-        '
-        'lblDescriptionP
-        '
-        Me.lblDescriptionP.AutoSize = True
-        Me.lblDescriptionP.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Promotions1BindingSource, "DiscountRate", True))
-        Me.lblDescriptionP.Location = New System.Drawing.Point(159, 236)
-        Me.lblDescriptionP.Name = "lblDescriptionP"
-        Me.lblDescriptionP.Size = New System.Drawing.Size(51, 17)
-        Me.lblDescriptionP.TabIndex = 8
-        Me.lblDescriptionP.Text = "Label5"
+        Me.Label5.Text = "From:"
         '
         'Label4
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Modern No. 20", 10.8!, CType((System.Drawing.FontStyle.Bold Or System.Drawing.FontStyle.Italic), System.Drawing.FontStyle), System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(6, 232)
+        Me.Label4.Location = New System.Drawing.Point(12, 293)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(139, 21)
         Me.Label4.TabIndex = 7
@@ -322,20 +305,8 @@ Partial Class WelcomeForm
         Me.Label3.TabIndex = 5
         Me.Label3.Text = "Active Period:"
         '
-        'lblActivePeriod
-        '
-        Me.lblActivePeriod.AutoSize = True
-        Me.lblActivePeriod.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.Promotions1BindingSource, "StartDate", True))
-        Me.lblActivePeriod.Location = New System.Drawing.Point(9, 207)
-        Me.lblActivePeriod.Name = "lblActivePeriod"
-        Me.lblActivePeriod.Size = New System.Drawing.Size(51, 17)
-        Me.lblActivePeriod.TabIndex = 6
-        Me.lblActivePeriod.Text = "Label4"
-        '
         'lstPromotion
         '
-        Me.lstPromotion.DataSource = Me.Promotions1BindingSource
-        Me.lstPromotion.DisplayMember = "Description"
         Me.lstPromotion.FormattingEnabled = True
         Me.lstPromotion.ItemHeight = 16
         Me.lstPromotion.Location = New System.Drawing.Point(6, 34)
@@ -358,10 +329,6 @@ Partial Class WelcomeForm
         '
         Me.Books1TableAdapter.ClearBeforeFill = True
         '
-        'Promotions1TableAdapter
-        '
-        Me.Promotions1TableAdapter.ClearBeforeFill = True
-        '
         'errProvider
         '
         Me.errProvider.ContainerControl = Me
@@ -369,6 +336,33 @@ Partial Class WelcomeForm
         'ErrorProvider1
         '
         Me.ErrorProvider1.ContainerControl = Me
+        '
+        'lblStart
+        '
+        Me.lblStart.AutoSize = True
+        Me.lblStart.Location = New System.Drawing.Point(22, 224)
+        Me.lblStart.Name = "lblStart"
+        Me.lblStart.Size = New System.Drawing.Size(51, 17)
+        Me.lblStart.TabIndex = 12
+        Me.lblStart.Text = "Label2"
+        '
+        'Label2
+        '
+        Me.Label2.AutoSize = True
+        Me.Label2.Location = New System.Drawing.Point(13, 249)
+        Me.Label2.Name = "Label2"
+        Me.Label2.Size = New System.Drawing.Size(29, 17)
+        Me.Label2.TabIndex = 13
+        Me.Label2.Text = "To:"
+        '
+        'lblEnd
+        '
+        Me.lblEnd.AutoSize = True
+        Me.lblEnd.Location = New System.Drawing.Point(22, 268)
+        Me.lblEnd.Name = "lblEnd"
+        Me.lblEnd.Size = New System.Drawing.Size(51, 17)
+        Me.lblEnd.TabIndex = 14
+        Me.lblEnd.Text = "Label9"
         '
         'WelcomeForm
         '
@@ -391,7 +385,6 @@ Partial Class WelcomeForm
         CType(Me.BookstoreDataSet, System.ComponentModel.ISupportInitialize).EndInit()
         Me.GroupBox1.ResumeLayout(False)
         Me.GroupBox1.PerformLayout()
-        CType(Me.Promotions1BindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.errProvider, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.ErrorProvider1, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
@@ -417,19 +410,19 @@ Partial Class WelcomeForm
     Friend WithEvents Label6 As Label
     Friend WithEvents lstNewArrivals As ListBox
     Friend WithEvents GroupBox1 As GroupBox
-    Friend WithEvents lblDescriptionP As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents Label3 As Label
-    Friend WithEvents lblActivePeriod As Label
     Friend WithEvents lstPromotion As ListBox
     Friend WithEvents Label1 As Label
     Friend WithEvents BookstoreDataSet As BookstoreDataSet
     Friend WithEvents Books1BindingSource As BindingSource
     Friend WithEvents Books1TableAdapter As BookstoreDataSetTableAdapters.Books1TableAdapter
-    Friend WithEvents Label5 As Label
-    Friend WithEvents Label2 As Label
-    Friend WithEvents Promotions1BindingSource As BindingSource
-    Friend WithEvents Promotions1TableAdapter As BookstoreDataSetTableAdapters.Promotions1TableAdapter
+
     Friend WithEvents errProvider As ErrorProvider
     Friend WithEvents ErrorProvider1 As ErrorProvider
+    Friend WithEvents lblRate As Label
+    Friend WithEvents Label5 As Label
+    Friend WithEvents lblEnd As Label
+    Friend WithEvents Label2 As Label
+    Friend WithEvents lblStart As Label
 End Class
